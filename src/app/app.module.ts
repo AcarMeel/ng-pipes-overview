@@ -3,9 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PrimeNgModule } from './prime-ng/prime-ng.module';
 
+import { SharedModule } from './shared/shared.module';
+import { SellsModule } from './sells/sells.module';
 
+const appModules = [
+  SellsModule,
+  SharedModule
+];
 
 @NgModule({
   declarations: [
@@ -14,7 +19,7 @@ import { PrimeNgModule } from './prime-ng/prime-ng.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PrimeNgModule
+    ...appModules
   ],
   providers: [],
   bootstrap: [AppComponent]
