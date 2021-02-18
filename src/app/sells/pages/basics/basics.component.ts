@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class BasicsComponent implements OnInit {
-
+  public name = 'MelissA';
   constructor() { }
 
   ngOnInit(): void {
