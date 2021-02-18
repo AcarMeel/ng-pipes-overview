@@ -1,17 +1,62 @@
 <div class="text-layout">
-    <h1>Basic Pipes</h1>
-    <p>Pipes included in the common module from Angular</p>
+  <h1>Basic Pipes</h1>
+  <p>Pipes included in the common module from Angular</p>
 </div>
 
 <div class="p-grid">
-    <div class="p-col-4">
-        <p-card header="uppercase"
-        [subheader]="name | uppercase"></p-card>
-    </div>
-    <div class="p-col-4">
-        <p-card header="lowercase" [subheader]="name | lowercase"></p-card>
-    </div>
-    <div class="p-col-4">
-        <p-card header="titlecase" [subheader]="name | titlecase"></p-card>
-    </div>
+  <div class="p-col-4">
+    <p-card header="uppercase" [subheader]="name | uppercase"></p-card>
+  </div>
+  <div class="p-col-4">
+    <p-card header="lowercase" [subheader]="name | lowercase"></p-card>
+  </div>
+  <div class="p-col-4">
+    <p-card header="titlecase" [subheader]="name | titlecase"></p-card>
+  </div>
+</div>
+
+<div class="text-layout">
+  <h1>Date Pipes</h1>
+  <p>Pipes included in the common module from Angular</p>
+</div>
+
+<div class="p-grid">
+  <div class="p-col-6">
+    <p-card>
+      <ul>
+        <li>date</li>
+        <li>date | date</li>
+        <li>date | date: 'short'</li>
+        <li>date | date: 'long'</li>
+        <li>date | date: 'yyyy'</li>
+        <li>date | date: 'LLL'</li>
+      </ul>
+      <hr>
+      <ul>
+          <li>date | date: 'long': 'GMT-4'</li>
+          <li>date | date: 'long': 'GMT-5'</li>
+          <li>date | date: 'long': '': 'en'</li>
+          <li>date | date: 'long': '': 'es-cr' </li>
+      </ul>
+    </p-card>
+  </div>
+  <div class="p-col-6">
+    <p-card>
+      <ul>
+        <li>{{ date }}</li>
+        <li>{{ date | date }}</li>
+        <li>{{ date | date: 'short' }}</li>
+        <li>{{ date | date: 'long' }}</li>
+        <li>{{ date | date: 'yyyy' }}</li>
+        <li>{{ date | date: 'LLL' }}</li>
+      </ul>
+      <hr>
+      <ul>
+          <li>{{ date | date: 'long': 'GMT-4' }}</li>
+          <li>{{ date | date: 'long': 'GMT-5' }}</li>
+          <li>{{ date | date: 'long': '': 'en' }}</li>
+          <li>{{ date | date: 'long': '': 'es-CR' }}</li>
+      </ul>
+    </p-card>
+  </div>
 </div>

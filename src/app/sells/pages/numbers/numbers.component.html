@@ -1,1 +1,22 @@
-<p>numbers works!</p>
+<div class="text-layout">
+  <h1>Decimal Pipes</h1>
+  <p>Pipes included in the common module from Angular</p>
+</div>
+
+<div class="p-grid">
+  <div class="p-col-4">
+    <p-card header="Number">
+        {{ totalSells | number: '1.4-4' }}
+    </p-card>
+  </div>
+  <div class="p-col-4">
+    <p-card header="Percent">
+        {{ percentage | percent }}
+    </p-card>
+  </div>
+  <div class="p-col-4">
+    <p-card header="Currency">
+        {{ totalSells | currency: 'CR': 'symbol-narrow' }}
+    </p-card>
+  </div>
+</div>
