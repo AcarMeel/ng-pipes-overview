@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-not-common',
@@ -6,11 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class NotCommonComponent implements OnInit {
+export class NotCommonComponent {
+  public name = 'Melissa';
+  public genre = 'female';
+  public invitationMapping = {
+    'female': 'invitarla',
+    'male': 'invitarlo'
+  };
+  public nameMale = 'Chris';
+  public genreMale = 'male';
+  public invitationMappingMale = {
+    'female': 'woman',
+    'male': 'man'
+  };
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  public puppies = [];
+  public puppiesMapping = {
+    '=0': 'no puppies so far',
+    '=1': 'one puppy today',
+    'other': 'many puppies today'
+  };
 }
